@@ -47,5 +47,21 @@
       "!<rootDir>/node_modules/",
       "!<rootDir>/path/to/dir/"
     ]
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didactor91/SiempreTarde.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didactor91/SiempreTarde/issues"
+  },
+  "homepage": "https://github.com/didactor91/SiempreTarde#readme"
 }
