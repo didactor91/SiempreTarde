@@ -4,18 +4,18 @@ import './index.sass'
 import emoji from 'react-easy-emoji'
 
 function Landing({ lang, onRegister, onLogin }) {
-    const { welcome, register, or, login } = literals[lang]
+    const { welcome, register, login } = literals[lang]
 
     return <main className='main-landing'>
-        
+
         <section className='heroTitle'>
             <h1>{welcome}<p>{ emoji(' 🚌💨 ... 🏃🏻‍♀️🏃🏻‍♂️') }</p></h1>
-            
+
         </section>
 
-        <section className='buttons-landing buttons is-10-desktop is-10-tablet is-10-mobile is-offset-one-quarter'>
-            <button className='button-landing button is-primary is-large is-rounded' onClick={() => onRegister()}>{register}</button>
-            <button className='button-landing button is-primary is-large is-rounded' onClick={() => onLogin()}>{login}</button>
+        <section className='buttons-landing buttons has-text-centered'>
+            <button className='button-landing button is-danger is-rounded is-6' onClick={() => onRegister()}>{register}</button>
+            <button className='button-landing button is-danger is-rounded is-6' onClick={() => onLogin()}>{login}</button>
         </section>
 
 
