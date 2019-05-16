@@ -3,7 +3,7 @@ export default {
         stopByCode: 'Stop by Code',
         stopByLine: 'Stop by Line',
         favoriteStops: 'Favorites',
-        title: 'Next TMB Bus',
+        title: 'Incoming TMB Bus',
         logout: 'Log Out'
     },
     es: {

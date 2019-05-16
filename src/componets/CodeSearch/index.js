@@ -4,6 +4,7 @@ import Results from '../Results'
 import { Route, withRouter, Redirect, Switch, Link } from 'react-router-dom'
 import logic from '../../logic';
 import StopCode from '../StopCode';
+import './index.sass'
 
 class CodeSearch extends Component {
     state = { error: null, line: null, lines: [], stop: null, favs:[] }
@@ -34,7 +35,7 @@ class CodeSearch extends Component {
 
         const { back } = literals[lang]
 
-        return <main>
+        return <main className="codesearch-container">
             <Switch>
                 <Route exact path="/byidstop" render={() => logic.isUserLoggedIn ? <StopCode lang={lang} onSearch={handleSearch} error={error} /> : <Redirect to="/" />} />
                 <Route path="/byidstop/results" render={() => logic.isUserLoggedIn ? <Results lang={lang} items={lines} onFav={handleFav} stop={stop} error={error} favs={favs}/> : <Redirect to="/" />} />
