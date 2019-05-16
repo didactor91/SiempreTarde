@@ -1,7 +1,5 @@
 .main-home
     font-family: 'Ubuntu', sans-serif
-    display: flex
-    flex-flow: column
     background-color: #4D4D4D
     height: 100%
     width: 100%
@@ -9,20 +7,34 @@
     justify-content: center
 
 .home-title
-    margin-bottom: 2vh
+    margin-top: 15vh
+    display: flex
+    flex-flow: columns
+    flex-wrap: wrap
     font-size: 5vh
     text-align: center
+    align-items: center
+    justify-content: center
     color: #FFFFFF
 
 span
     display: block
 
-.button-section
-    button
-        margin: 0
+.home-container
+    margin-top: 10vh
+    display: flex
+    flex-flow: columns
+    align-items: center
+    justify-content: center
+    width: 60%
 
-        &:first-of-type
-            margin-top: 24px
+
+.button-home
+    font-size: 2vh
+    width: 25vh
+    margin: 1vh
+    justify-content: center
+    align-content: center
 
 .columns
     display: flex
@@ -32,4 +44,4 @@ span
     justify-content: center
 
 .column
-    min-width: 30vh
+    min-width: 25vh
