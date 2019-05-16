@@ -15,8 +15,8 @@ function Home({ lang, onStopCode, onLineCode, onFavorites, onLogout }) {
             </p>
 
         </h1>
-        <section className="home-container">
-            <div className='columns is-desktop is-8 is-offset-2'>
+        <section className="container">
+            <div className='columns is-desktop is-8 is-offset-2 has-text-centered'>
                 <div className='column is-2 is-desktop'>
                     <button className='button-home button is-danger is-large is-rounded' onClick={() => onStopCode()}>{stopByCode}</button>
                 </div>
