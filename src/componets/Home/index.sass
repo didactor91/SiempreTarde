@@ -2,19 +2,34 @@
     font-family: 'Ubuntu', sans-serif
     display: flex
     flex-flow: column
-    justify-content: space-around
-    height: 100vh
+    background-color: #4D4D4D
+    height: 100%
     width: 100%
+    align-items: center
+    justify-content: center
 
-    .home-title
-        margin-bottom: 2vh
+.home-title
+    margin-bottom: 2vh
+    font-size: 5vh
+    text-align: center
+    color: #FFFFFF
 
-        span
-            display: block
+span
+    display: block
 
-    .button-section
-        button
-            margin: 0
+.button-section
+    button
+        margin: 0
 
-            &:first-of-type
-                margin-top: 24px
+        &:first-of-type
+            margin-top: 24px
+
+.columns
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+.column
+    min-width: 30vh
